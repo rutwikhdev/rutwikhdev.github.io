@@ -1,0 +1,21 @@
+---
+layout: default
+---
+
+<div class="home">
+
+<div class="home-sub">Outcome of letting my intrusive thoughts win...</div>
+
+  <ul class="posts">
+    {% for post in site.posts %}
+      <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
+      <div class="post">
+        <span class="hashtag">#</span> 
+        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">
+          {{ post.title }}
+        </a>
+      </div>
+    {% endfor %}
+  </ul>
+
+</div>

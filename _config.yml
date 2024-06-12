@@ -1,0 +1,19 @@
+# Site settings
+title: rutwik hiwalkar
+email: 
+description: "Outcome of Letting my intrusive thoughts win"
+baseurl: ""
+url: "http://rutwikhdev.github.io"
+twitter: "https://twitter.com/rutwikhiwalkar_"
+github: "https://github.com/rutwikhdev"
+
+# Build settings
+markdown: kramdown
+permalink: /:title/
+
+
+highlighter: rouge
+kramdown:
+  input: GFM
+  auto_ids: true
+  syntax_highlighter: rouge
