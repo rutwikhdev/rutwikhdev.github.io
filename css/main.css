@@ -26,20 +26,6 @@
   font-style: normal;
 }
 
-@font-face {
-  font-family: "Lora";
-  src: url("../assets/Lora-Regular.ttf") format('truetype');
-  font-weight: bold;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "LoraMedium";
-  src: url("../assets/Lora-SemiBold.ttf") format('truetype');
-  font-weight: bold;
-  font-style: normal;
-}
-# Solarized Dark theme CSS
 /* Base */
 /* ----------------------------------------------------------*/
 
@@ -160,9 +146,13 @@ a:hover {
   padding: 0; /* removes indentation */
 }
 
+.post-date {
+  font-size: 14px;
+}
+
 .posts .post-link {
   font-size: 24px;
-  font-family: InterMedium;
+  font-family: Inter;
   color: #eee8d5;
   text-decoration: none;
 }
@@ -184,12 +174,13 @@ a:hover {
 }
 
 .post-header h1 {
-  font-family: LoraMedium;
+  font-family: InterMedium;
   font-size: 36px;
   color: #fdf6e3;
 }
 
 .meta {
+  font-size: 16px;
   color: #586e75;
 }
 
@@ -232,7 +223,7 @@ a:hover {
   border-left: 4px solid #268bd2;
   padding-left: 20px;
   font-size: 18px;
-  font-family: MonserratItalic;
+  font-family: InterItalic;
   opacity: .9;
   letter-spacing: -0.6px;
   margin: 30px 0;

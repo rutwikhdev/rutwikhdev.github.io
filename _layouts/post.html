@@ -1,11 +1,18 @@
 ---
 layout: default
 ---
+{% assign word_count = page.content
+   | strip_html
+   | replace_regex: '\s+', ' '
+   | strip
+   | split: ' '
+   | size %}
+
 <div class="post">
 
   <header class="post-header">
     <h1>{{ page.title }}</h1>
-    <p class="meta">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • Written by {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %} • {{ content | size }} Words</p>
+    <p class="meta">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • Written by {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %} • {{ word_count }} Words</p>
   </header>
 
   <article class="post-content">
