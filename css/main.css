@@ -1,57 +1,44 @@
+/* Fonts */
 @font-face {
   font-family: "Inter";
   src: url("../assets/Inter-Regular.ttf") format('truetype');
-  font-weight: bold;
-  font-style: normal;
 }
-
 @font-face {
   font-family: "InterItalic";
   src: url("../assets/Inter-Italic.ttf") format('truetype');
-  font-weight: bold;
-  font-style: normal;
 }
-
 @font-face {
   font-family: "InterMedium";
   src: url("../assets/Inter-Medium.ttf") format('truetype');
-  font-weight: bold;
-  font-style: normal;
 }
-
 @font-face {
   font-family: "CalSans";
   src: url("../assets/CalSans-SemiBold.ttf") format('truetype');
-  font-weight: bold;
-  font-style: normal;
 }
 
 /* Base */
-/* ----------------------------------------------------------*/
-
 * {
   margin: 0;
   padding: 0;
 }
-
 html, body { height: 100%; }
 
 body {
   font-family: Inter, sans-serif;
   font-size: 18px;
   line-height: 1.6;
-  background-color: #002b36; /* Solarized Base03 */
-  color: #93a1a1; /* Base1 */
+  background-color: #303446; /* Frappe Base */
+  color: #c6d0f5; /* Text */
 }
 
 /* Links */
 a {
-  color: #268bd2; /* Blue */
+  color: #8caaee; /* Blue */
   text-decoration: none;
 }
 a:hover {
   text-decoration: underline;
-  color: #2aa198; /* Cyan */
+  color: #81c8be; /* Teal */
 }
 
 /* Utility */
@@ -61,23 +48,14 @@ a:hover {
   margin: 0 auto;
   zoom: 1;
 }
-
 .wrap {
   display: flex;
   justify-content: space-between;
 }
 
-.menu-toggle {
-  display: none;
-  font-size: 24px;
-  background: none;
-  border: none;
-  cursor: pointer;
-}
-
 /* Navbar */
 .navbar-link {
-  color: #93a1a1;
+  color: #b5bfe2;
   font-size: 14px;
   margin: 5px 2px;
   line-height: 2;
@@ -85,7 +63,8 @@ a:hover {
 
 .site-title,
 .site-title:visited {
-  color: #eee8d5;
+  color: #a6d189;
+  color: #babbf1;
   font-family: CalSans, sans-serif;
   font-size: 1.5rem;
   font-weight: 900;
@@ -93,32 +72,32 @@ a:hover {
 }
 
 .site-title:hover {
-  text-decoration: underline 4px solid #2aa198;
+  text-decoration: underline 4px solid #81c8be;
 }
 
 .site-nav .page-link {
   margin-left: 20px;
-  color: #839496;
+  color: #a5adce;
 }
 
 /* Footer */
 .site-footer {
-  border-top: 1px solid #073642;
+  border-top: 1px solid #414559;
   padding: 30px 0 10px;
-  background-color: #002b36;
+  background-color: #232634;
 }
 
 .footer-heading {
   font-size: 18px;
   font-weight: 300;
-  color: #b58900;
+  color: #e5c890;
   margin-bottom: 15px;
 }
 
 .site-footer li,
 .site-footer p {
   font-size: 15px;
-  color: #586e75;
+  color: #a5adce;
 }
 
 /* Page Content */
@@ -129,41 +108,42 @@ a:hover {
 /* Home styles */
 .home h1 { 
   margin-bottom: 25px; 
-  color: #fdf6e3;
+  color: #c6d0f5;
 }
 
 .home-sub {
   font-size: 18px;
   font-style: italic;
   margin-bottom: 50px;
-  color: #93a1a1;
+  color: #b5bfe2;
 }
 
 .posts {
-  list-style-type: none;
   list-style: none;
   margin: 0;
-  padding: 0; /* removes indentation */
+  padding: 0;
 }
 
 .post-date {
   font-size: 14px;
+  color: #a5adce;
 }
 
 .posts .post-link {
   font-size: 24px;
   font-family: Inter;
-  color: #eee8d5;
+  color: #babbf1;
+  color: #a6d189;
   text-decoration: none;
 }
 .post-link:hover {
-  text-decoration: underline 4px solid #268bd2;
+  text-decoration: underline 4px solid #8caaee;
 }
 
 /* Hashtags */
 .hashtag, .period {
   font-size: 24px;
-  color: #b58900;
+  color: #e5c890;
   font-weight: 600;
 }
 
@@ -176,16 +156,17 @@ a:hover {
 .post-header h1 {
   font-family: InterMedium;
   font-size: 36px;
-  color: #fdf6e3;
+  color: #c6d0f5;
+  /* color: #babbf1; */
 }
 
 .meta {
   font-size: 16px;
-  color: #586e75;
+  color: #a5adce;
+  color: #949cbb;
 }
 
 .post-content { margin: 0 0 30px; }
-
 .post-content > * { margin: 20px 0; }
 
 .post-content h1,
@@ -195,49 +176,56 @@ a:hover {
 .post-content h5,
 .post-content h6 {
   font-family: InterMedium;
-  color: #eee8d5;
+  color: #f2d5cf;
   line-height: 1.25;
   font-weight: 400;
-  margin: 40px 0 0px 0;
+  margin: 40px 0 0;
 }
 
 .post-content h2 {
   font-size: 32px;
   letter-spacing: -1.25px;
-  color: #cb4b16; /* orange accent */
+  color: #ef9f76; /* Peach */
 }
 
 .post-content h3 {
   font-size: 22px;
   letter-spacing: -1px;
-  color: #b58900;
+  color: #e5c890; /* Yellow */
 }
 
 .post-content h4 {
   font-size: 20px;
   letter-spacing: -1px;
-  color: #b58900;
+  color: #e5c890;
 }
 
 .post-content blockquote {
-  border-left: 4px solid #268bd2;
+  border-left: 4px solid #8caaee;
   padding-left: 20px;
   font-size: 18px;
   font-family: InterItalic;
   opacity: .9;
   letter-spacing: -0.6px;
   margin: 30px 0;
-  background-color: #073642;
+  background-color: #414559;
   border-radius: 5px;
-  color: #93a1a1;
+  color: #b5bfe2;
+}
+
+.post-content blockquote p {
+  padding: 20px 0;
 }
 
 .post-content ul,
-.post-content ol { padding-left: 20px; }
+.post-content ol{
+  margin-left: 20px;
+  padding-left: 20px;
+}
 
 .post pre,
 .post code {
-  border: 1px solid #073642;
+  border: 1px solid #414559;
   padding: 8px 12px;
   border-radius: 3px;
   font-size: 15px;
@@ -246,47 +234,29 @@ a:hover {
 
 .post code { padding: 1px 5px; }
 
-.post ul,
-.post ol { margin-left: 1.35em; }
-
-.post pre code {
-  border: 0;
-  padding-right: 0;
-  padding-left: 0;
-}
-
-/* terminal */
 .post pre.terminal {
-  border: 1px solid #586e75;
-  background-color: #073642;
-  color: #93a1a1;
+  border: 1px solid #737994;
+  background-color: #414559;
+  color: #c6d0f5;
   border-radius: 3px;
 }
 
 /* Images */
 .imgright { float: right; margin-left: 10px; }
 .imgcap img {
-  border: 1px solid #586e75;
+  border: 1px solid #737994;
   max-width: 100%;
 }
 .imgcap {
-  color: #93a1a1;
+  color: #a5adce;
   font-size: 14px;
   text-align: center;
 }
 
-.svgdiv {
-  width: 100%;
-  text-align: center;
-}
-
-/* Syntax highlighting styles */
-/* ----------------------------------------------------------*/
-/* Solarized Dark for Code Blocks */
-
+/* Syntax highlighting */
 pre.highlight {
-  background-color: #073642;
-  color: #fdf6e3;
+  background-color: #414559;
+  color: #c6d0f5;
   padding: 1rem;
   border-radius: 0.5rem;
   overflow-x: auto;
@@ -295,70 +265,53 @@ pre.highlight {
 code {
   font-family: 'Fira Code', monospace;
   font-size: 0.9rem;
-  color: #2aa198;
+  color: #81c8be;
 }
 
-/* syntax token colors */
-.highlight .c { color: #586e75 } /* Comment */
-.highlight .k { color: #859900 } /* Keyword */
-.highlight .s { color: #2aa198 } /* String */
-.highlight .n { color: #93a1a1 } /* Name */
-.highlight .o { color: #6c71c4 } /* Operator */
-.highlight .m { color: #b58900 } /* Number/Literal */
-.highlight .p { color: #93a1a1 } /* Punctuation */
+.highlight .c { color: #737994 } /* Comment */
+.highlight .k { color: #ca9ee6 } /* Keyword */
+.highlight .s { color: #81c8be } /* String */
+.highlight .n { color: #c6d0f5 } /* Name */
+.highlight .o { color: #8caaee } /* Operator */
+.highlight .m { color: #e5c890 } /* Number/Literal */
+.highlight .p { color: #c6d0f5 } /* Punctuation */
 
-/* media queries */
+/* Media Queries */
 @media screen and (max-width: 750px) {
-
   .footer-col-1 { width: 50%; }
-
   .footer-col-2 {
     width: calc(50% - 10px);
     margin-right: 0;
   }
-
   .site-footer .column.footer-col-3 {
     width: auto;
     float: none;
     clear: both;
   }
-
 }
 
-@media screen and (max-width: 600px) {
 
+@media screen and (max-width: 600px) {
   .content-wrap { padding: 0 12px; }
 
   .site-nav {
     position: fixed;
     z-index: 10;
     top: 14px; right: 8px;
-    background-color: #073642;
+    background-color: #414559;
     border-radius: 5px;
-    border: 1px solid #073642;
+    border: 1px solid #414559;
   }
 
-  .site-nav .menu-icon {
-    display: block;
-    font-size: 24px;
-    color: #93a1a1;
-    float: right;
-    width: 36px;
-    text-align: center;
-    line-height: 36px;
-  }
-
-  body {
-    font-size: 16px;
-  }
+  body { font-size: 16px; }
 
   .post-header h1 { font-size: 30px; }
   .post-content h2 { font-size: 28px; }
   .post-content h3 { font-size: 22px; }
   .post-content h4 { font-size: 18px; }
-  .post-content blockquote { padding-left: 10px; }
-  .post-content ul,
-  .post-content ol { padding-left: 10px; }
+  .post-content blockquote { 
+    padding-left: 10px; 
+  }
 
   .site-footer .column {
     float: none;

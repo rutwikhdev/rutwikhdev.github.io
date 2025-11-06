@@ -4,9 +4,6 @@
       {{ site.title }}<span class="period">.</span>
     </a>
 
-    <!-- Hamburger toggle -->
-    <button class="menu-toggle" aria-label="Toggle menu">☰</button>
-
     <!-- Navigation links -->
     <nav class="navbar">
       <a class="navbar-link"  href="/">Home</a>
@@ -17,12 +14,3 @@
     </nav>
   </div>
 </header>
-
-<script>
-  const toggle = document.querySelector('.menu-toggle');
-  const navbar = document.querySelector('.navbar');
-  
-  toggle.addEventListener('click', () => {
-    navbar.classList.toggle('show');
-  });
-</script>
