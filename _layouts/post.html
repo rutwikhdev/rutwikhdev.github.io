@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post-full
 ---
 {% assign word_count = page.content
    | strip_html
@@ -8,19 +8,28 @@ layout: default
    | split: ' '
    | size %}
 
-<div class="post">
+<div class="newspaper-container">
 
-  <header class="post-header">
-    <h1>{{ page.title }}</h1>
-    <p class="meta">Written on {{ page.date | date: "%b %-d, %Y" }} {% if page.meta %} • {{ page.meta }}{% endif %} • {{ word_count }} Words</p>
-  </header>
+  <article class="newspaper-article post-newspaper">
 
-  <article class="post-content">
-  {{ content }}
+    <header class="article-header">
+      <h1 class="headline">{{ page.title }}</h1>
+      <div class="byline">
+        <span class="byline-author">By Rutwik Hiwalkar</span>
+        <span class="byline-separator">|</span>
+        <span class="byline-date">{{ word_count }} words</span>
+      </div>
+    </header>
+
+    <div class="post-content-newspaper">
+      {{ content }}
+    </div>
+
   </article>
 
-  <!-- mathjax -->
-  {% if page.mathjax %}
-  <script type="text/javascript" src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-  {% endif %}
 </div>
+
+<!-- mathjax -->
+{% if page.mathjax %}
+<script type="text/javascript" src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+{% endif %}

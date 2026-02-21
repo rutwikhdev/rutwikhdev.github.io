@@ -1,0 +1,44 @@
+<footer class="site-footer">
+  <div class="content-wrap">
+    <p>&copy; {{ site.time | date: '%Y' }} {{ site.title }}. Built with <a href="https://jekyllrb.com" target="_blank" rel="noopener">Jekyll</a>.</p>
+  </div>
+</footer>
+
+<script>
+  // Dark mode toggle functionality
+  (function() {
+    const themeToggle = document.getElementById('theme-toggle');
+    const moonIcon = document.getElementById('theme-icon-moon');
+    const sunIcon = document.getElementById('theme-icon-sun');
+    const html = document.documentElement;
+    
+    // Check for saved theme preference
+    const savedTheme = localStorage.getItem('theme');
+    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+    
+    // Set initial theme
+    if (savedTheme === 'dark' || (!savedTheme && prefersDark)) {
+      html.classList.add('dark-mode');
+      if (moonIcon && sunIcon) {
+        moonIcon.style.display = 'none';
+        sunIcon.style.display = 'block';
+      }
+    }
+    
+    // Toggle theme on button click
+    if (themeToggle) {
+      themeToggle.addEventListener('click', function() {
+        const isDark = html.classList.toggle('dark-mode');
+        
+        // Update icons
+        if (moonIcon && sunIcon) {
+          moonIcon.style.display = isDark ? 'none' : 'block';
+          sunIcon.style.display = isDark ? 'block' : 'none';
+        }
+        
+        // Save preference
+        localStorage.setItem('theme', isDark ? 'dark' : 'light');
+      });
+    }
+  })();
+</script>
