@@ -1,0 +1,7 @@
+# Cache static assets
+/css/*
+  Cache-Control: max-age=31536000
+
+# Index.html cache
+/index.html
+  Cache-Control: max-age=0

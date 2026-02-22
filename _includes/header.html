@@ -1,16 +1,22 @@
-<header class="site-header">
-  <div class="wrap">
-    <a class="site-title" href="{{ site.baseurl }}/">
-      {{ site.title }}<span class="period">.</span>
-    </a>
+<header>
+  <a class="site-title" href="{{ site.baseurl }}/">
+    {{ site.title }}
+  </a>
 
-    <!-- Navigation links -->
-    <nav class="navbar">
-      <a class="navbar-link"  href="/">Home</a>
-      <a class="navbar-link" target="_blank" href="{{ site.github }}">Github</a>
-      <a class="navbar-link" target="_blank" href="{{ site.twitter }}">X</a>
-      <a class="navbar-link" target="_blank" href="{{ "/feed.xml" | prepend: site.baseurl }}">Feed</a>
-      <a class="navbar-link" target="_blank" href="/resume.pdf">Resume</a>
-    </nav>
-  </div>
+  <nav class="nav">
+    <a href="/">Home</a>
+    <a href="/about">About</a>
+    <a target="_blank" href="{{ site.github }}">Github</a>
+    <a target="_blank" href="{{ site.twitter }}">X</a>
+    <a target="_blank" href="{{ "/feed.xml" | prepend: site.baseurl }}">Feed</a>
+    <a target="_blank" href="/resume.pdf">Resume</a>
+    <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
+      <svg class="sun-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <path d="M12 7a5 5 0 100 10 5 5 0 000-10zM12 1v2m0 18v2M4.22 4.22l1.42 1.42m12.72 12.72l1.42 1.42M1 12h2m18 0h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/>
+      </svg>
+      <svg class="moon-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" style="display:none;">
+        <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/>
+      </svg>
+    </button>
+  </nav>
 </header>
