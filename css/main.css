@@ -33,10 +33,10 @@ html {
 }
 
 body {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
   background-color: var(--bg);
   color: var(--text);
-  line-height: 1.7;
+  line-height: 1.6em;
   transition: background-color 0.2s ease, color 0.2s ease;
   min-height: 100vh;
 }
@@ -45,7 +45,7 @@ em,
 i,
 .post-content blockquote,
 .hero p {
-  font-family: "Comic Sans MS", "Chalkboard SE", "Bradley Hand", cursive;
+  font-family: "Source Serif 4", Georgia, serif;
   font-style: italic;
 }
 
@@ -153,7 +153,6 @@ header {
 
 .post-link {
   font-size: 1.3rem;
-  font-weight: 500;
   border: none;
   display: inline-block;
 }
@@ -177,6 +176,7 @@ header {
 
 .post-header h1 {
   display: block;
+  font-family: "Source Serif 4", Georgia, serif;
   font-size: 2rem;
   font-weight: 600;
   letter-spacing: -0.03em;
@@ -190,10 +190,12 @@ header {
 }
 
 .post-content {
+  font-family: "Source Serif 4", Georgia, serif;
   font-weight: 400;
 }
 
 .post-content h2 {
+  font-family: "Source Serif 4", Georgia, serif;
   font-size: 1.5rem;
   font-weight: 600;
   margin-top: 50px;
@@ -202,6 +204,7 @@ header {
 }
 
 .post-content h3 {
+  font-family: "Source Serif 4", Georgia, serif;
   font-size: 1.2rem;
   font-weight: 600;
   margin-top: 35px;

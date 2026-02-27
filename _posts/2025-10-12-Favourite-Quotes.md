@@ -1,7 +1,7 @@
 ---
 layout: post
 comments: true
-title:  "Collection Quotes that move me"
+title:  "Collection of Quotes that Move Me"
 date: 2025-10-11 22:00:00
 author: Rutwik Hiwalkar
 ---
