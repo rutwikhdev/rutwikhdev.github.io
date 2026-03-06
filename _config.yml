@@ -1,6 +1,6 @@
 # Site settings
 title: rutwik hiwalkar
-email: 
+email: "rutwikhdev@gmail.com"
 description: "Outcome of Letting my intrusive thoughts win"
 baseurl: ""
 url: "http://rutwikhdev.github.io"
@@ -10,7 +10,6 @@ github: "https://github.com/rutwikhdev"
 # Build settings
 markdown: kramdown
 permalink: /:title/
-
 
 highlighter: rouge
 kramdown:
