@@ -33,7 +33,7 @@ html {
 }
 
 body {
-  font-family: "Work Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+  font-family: "Rubik", -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
   background-color: var(--bg);
   color: var(--text);
   line-height: 1.6em;
@@ -45,7 +45,7 @@ em,
 i,
 .post-content blockquote,
 .hero p {
-  font-family: "Work Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+  font-family: "Rubik", -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
   font-style: italic;
 }
 
@@ -181,7 +181,7 @@ header {
 
 .post-header h1 {
   display: block;
-  font-family: "Work Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+  font-family: "Rubik", -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
   font-size: 2rem;
   font-weight: 600;
   letter-spacing: -0.03em;
@@ -195,12 +195,12 @@ header {
 }
 
 .post-content {
-  font-family: "Work Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+  font-family: "Rubik", -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
   font-weight: 400;
 }
 
 .post-content h2 {
-  font-family: "Work Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+  font-family: "Rubik", -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
   font-size: 1.5rem;
   font-weight: 600;
   margin-top: 50px;
@@ -209,7 +209,7 @@ header {
 }
 
 .post-content h3 {
-  font-family: "Work Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+  font-family: "Rubik", -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
   font-size: 1.2rem;
   font-weight: 600;
   margin-top: 35px;
@@ -332,7 +332,16 @@ header {
   max-width: 100%;
   height: auto;
   border-radius: 5px;
-  margin: 20px 0;
+}
+
+.post-content figure {
+  margin: 25px 0;
+  text-align: center;
+}
+
+.post-content figcaption {
+  font-size: 0.85rem;
+  color: var(--text-light);
 }
 
 .post-content hr {

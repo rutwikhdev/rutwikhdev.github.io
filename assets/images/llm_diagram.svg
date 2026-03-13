@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="860" height="220" font-family="Arial, sans-serif">
+  <!-- Background -->
+  <rect width="860" height="220" fill="white"/>
+
+  <!-- Pink output token band -->
+  <rect x="0" y="160" width="860" height="50" fill="#ffe0e0" rx="0"/>
+
+  <!-- Dashed divider line -->
+  <line x1="200" y1="0" x2="200" y2="220" stroke="#aaa" stroke-width="1.5" stroke-dasharray="6,4"/>
+
+  <!-- Stage labels -->
+  <text x="70" y="18" font-size="13" font-style="italic" font-weight="bold" fill="#333">Summarization Stage</text>
+  <text x="430" y="18" font-size="13" font-style="italic" font-weight="bold" fill="#333">Generation Stage</text>
+
+  <!-- Input label -->
+  <text x="20" y="38" font-size="11" fill="#1a9a1a" font-weight="bold">Input Tokens</text>
+  <text x="20" y="55" font-size="12" fill="#1a9a1a" font-style="italic" font-weight="bold">"What do monkeys</text>
+  <text x="20" y="70" font-size="12" fill="#1a9a1a" font-style="italic" font-weight="bold">and humans have</text>
+  <text x="20" y="85" font-size="12" fill="#1a9a1a" font-style="italic" font-weight="bold">in common?"</text>
+
+  <!-- Arrowhead marker -->
+  <defs>
+    <marker id="arrow" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto">
+      <path d="M0,0 L0,8 L8,4 z" fill="#333"/>
+    </marker>
+  </defs>
+
+  <!-- Arrow from input to box 1 -->
+  <line x1="100" y1="90" x2="100" y2="108" stroke="#333" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- LM Box 1 (Summarization) -->
+  <rect x="50" y="108" width="100" height="48" fill="#f5e6a0" stroke="#c8a800" stroke-width="1.5" rx="4"/>
+  <text x="100" y="128" text-anchor="middle" font-size="11" font-weight="bold">Language</text>
+  <text x="100" y="143" text-anchor="middle" font-size="11" font-weight="bold">Model</text>
+  <line x1="100" y1="156" x2="100" y2="162" stroke="#333" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <text x="100" y="183" text-anchor="middle" font-size="12" fill="#333" font-style="italic" font-weight="bold">"Monkeys"</text>
+
+  <!-- feedback arc + horizontal arrow box1 -> box2 -->
+  <path d="M100,108 Q100,92 175,92 Q218,92 218,108" stroke="#333" stroke-width="1.5" fill="none" marker-end="url(#arrow)"/>
+  <line x1="150" y1="132" x2="216" y2="132" stroke="#333" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- LM Box 2 -->
+  <rect x="218" y="108" width="100" height="48" fill="#f5e6a0" stroke="#c8a800" stroke-width="1.5" rx="4"/>
+  <text x="268" y="128" text-anchor="middle" font-size="11" font-weight="bold">Language</text>
+  <text x="268" y="143" text-anchor="middle" font-size="11" font-weight="bold">Model</text>
+  <line x1="268" y1="156" x2="268" y2="162" stroke="#333" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <text x="268" y="183" text-anchor="middle" font-size="12" fill="#333" font-style="italic" font-weight="bold">"and"</text>
+
+  <!-- feedback arc + horizontal arrow box2 -> box3 -->
+  <path d="M268,108 Q268,92 343,92 Q385,92 385,108" stroke="#333" stroke-width="1.5" fill="none" marker-end="url(#arrow)"/>
+  <line x1="318" y1="132" x2="383" y2="132" stroke="#333" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- LM Box 3 -->
+  <rect x="385" y="108" width="100" height="48" fill="#f5e6a0" stroke="#c8a800" stroke-width="1.5" rx="4"/>
+  <text x="435" y="128" text-anchor="middle" font-size="11" font-weight="bold">Language</text>
+  <text x="435" y="143" text-anchor="middle" font-size="11" font-weight="bold">Model</text>
+  <line x1="435" y1="156" x2="435" y2="162" stroke="#333" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <text x="435" y="183" text-anchor="middle" font-size="12" fill="#333" font-style="italic" font-weight="bold">"humans"</text>
+
+  <!-- feedback arc + horizontal arrow box3 -> box4 -->
+  <path d="M435,108 Q435,92 510,92 Q551,92 551,108" stroke="#333" stroke-width="1.5" fill="none" marker-end="url(#arrow)"/>
+  <line x1="485" y1="132" x2="549" y2="132" stroke="#333" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- LM Box 4 -->
+  <rect x="551" y="108" width="100" height="48" fill="#f5e6a0" stroke="#c8a800" stroke-width="1.5" rx="4"/>
+  <text x="601" y="128" text-anchor="middle" font-size="11" font-weight="bold">Language</text>
+  <text x="601" y="143" text-anchor="middle" font-size="11" font-weight="bold">Model</text>
+  <line x1="601" y1="156" x2="601" y2="162" stroke="#333" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <text x="601" y="183" text-anchor="middle" font-size="12" fill="#333" font-style="italic" font-weight="bold">"have"</text>
+
+  <!-- feedback arc + dots -->
+  <path d="M601,108 Q601,92 660,92 Q695,92 695,108" stroke="#333" stroke-width="1.5" fill="none"/>
+  <line x1="651" y1="132" x2="690" y2="132" stroke="#333" stroke-width="1.5"/>
+  <text x="697" y="136" font-size="18" fill="#333">...</text>
+  <text x="697" y="185" font-size="18" fill="#333">...</text>
+
+  <!-- dots -> final box -->
+  <line x1="723" y1="132" x2="750" y2="132" stroke="#333" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <path d="M710,108 Q710,92 765,92 Q752,92 752,108" stroke="#333" stroke-width="1.5" fill="none" marker-end="url(#arrow)"/>
+
+  <!-- LM Box Final -->
+  <rect x="752" y="108" width="100" height="48" fill="#f5e6a0" stroke="#c8a800" stroke-width="1.5" rx="4"/>
+  <text x="802" y="128" text-anchor="middle" font-size="11" font-weight="bold">Language</text>
+  <text x="802" y="143" text-anchor="middle" font-size="11" font-weight="bold">Model</text>
+  <line x1="802" y1="156" x2="802" y2="162" stroke="#333" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <text x="802" y="183" text-anchor="middle" font-size="12" fill="#333" font-style="italic" font-weight="bold">"2 legs"</text>
+
+  <!-- Output Tokens label -->
+  <text x="748" y="207" font-size="11" fill="#333" font-weight="bold">Output Tokens</text>
+</svg>
