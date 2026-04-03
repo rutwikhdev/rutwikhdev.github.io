@@ -1,6 +1,7 @@
 :root {
   --bg: #ffffff;
   --text: #1a1a1a;
+  --text-header: #1a1a1a;
   --text-light: #666666;
   --link: #000000;
   --link-hover: #666666;
@@ -11,8 +12,9 @@
 }
 
 [data-theme="dark"] {
-  --bg: #1a1a1a;
-  --text: #e5e5e5;
+  --bg: #1d1f21;
+  --text: #c9cacc;
+  --text-header: #e5e5e5;
   --text-light: #999999;
   --link: #ffffff;
   --link-hover: #999999;
@@ -180,6 +182,7 @@ header {
 }
 
 .post-header h1 {
+  color: var(--text-header);
   display: block;
   font-family: "Rubik", -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
   font-size: 2rem;
