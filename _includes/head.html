@@ -8,11 +8,15 @@
     <link href="/feed.xml" type="application/atom+xml" rel="alternate" title="{{ site.title }} posts" />
     <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🔌</text></svg>">
 
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600;14..32,700&family=JetBrains+Mono:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+    <!-- Local fonts -->
+    <link rel="preload" href="{{ "/assets/fonts/inter-latin.woff2" | prepend: site.baseurl }}" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="{{ "/assets/fonts/space-grotesk-latin.woff2" | prepend: site.baseurl }}" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="{{ "/assets/fonts/jetbrains-mono-latin.woff2" | prepend: site.baseurl }}" as="font" type="font/woff2" crossorigin>
 
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
+    <!-- Critical CSS -->
+    <style>{% include critical-css.html %}</style>
+
+    <!-- Full CSS -->
+    <link rel="preload" href="{{ "/css/main.css" | prepend: site.baseurl }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}"></noscript>
 </head>

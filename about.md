@@ -5,7 +5,10 @@ title: About
 
 <div class="about">
   <div class="about-photo">
-    <img src="/assets/me.png" alt="Me">
+    <picture>
+      <source srcset="/assets/me-640.webp" type="image/webp">
+      <img src="/assets/me-640.png" alt="Me" width="640" height="423" decoding="async">
+    </picture>
   </div>
   
   <div class="about-content">
