@@ -541,9 +541,8 @@ b {
 
 .about-photo img {
   width: 100%;
-  max-width: 640px;
   height: auto;
-  border: 1px solid var(--border-soft);
+  border: 8px solid var(--border-soft);
   border-radius: 10px;
   filter: saturate(0.9) contrast(0.98);
 }
