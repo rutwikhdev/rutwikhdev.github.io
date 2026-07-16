@@ -16,15 +16,6 @@
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
-@font-face {
-  font-family: "JetBrains Mono";
-  src: url("/assets/fonts/jetbrains-mono-latin.woff2") format("woff2");
-  font-weight: 400 600;
-  font-style: normal;
-  font-display: swap;
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-
 :root {
   color-scheme: light;
   --paper-bg: #eeeeee;
@@ -89,9 +80,9 @@ html {
 body {
   min-height: 100vh;
   background:
-    radial-gradient(circle at 20% 0%, rgba(215, 175, 95, 0.13), transparent 32rem),
-    linear-gradient(90deg, rgba(68, 68, 68, 0.025) 1px, transparent 1px),
-    linear-gradient(180deg, rgba(68, 68, 68, 0.02) 1px, transparent 1px),
+    /* radial-gradient(circle at 20% 0%, rgba(215, 175, 95, 0.13), transparent 32rem), */
+    /* linear-gradient(90deg, rgba(68, 68, 68, 0.025) 1px, transparent 1px), */
+    /* linear-gradient(180deg, rgba(68, 68, 68, 0.02) 1px, transparent 1px), */
     var(--paper-bg);
   background-size: auto, 34px 34px, 34px 34px, auto;
   color: var(--text);
@@ -239,7 +230,7 @@ b {
   display: block;
   margin-bottom: 5px;
   color: var(--text-muted);
-  font-family: "JetBrains Mono", monospace;
+  font-family: monospace;
   font-size: 0.72rem;
   letter-spacing: -0.03em;
 }
@@ -252,7 +243,7 @@ b {
 
 .hashtag {
   color: var(--accent);
-  font-family: "JetBrains Mono", monospace;
+  font-family: monospace;
   font-size: 0.95rem;
   line-height: 1;
 }
@@ -292,7 +283,7 @@ b {
   display: block;
   margin-top: 18px;
   color: var(--text-muted);
-  font-family: "JetBrains Mono", monospace;
+  font-family: monospace;
   font-size: 0.72rem;
   letter-spacing: -0.035em;
   line-height: 1.7;
@@ -430,7 +421,7 @@ b {
 
 .post-content pre,
 .post-content code {
-  font-family: "JetBrains Mono", "SFMono-Regular", Consolas, monospace;
+  font-family: monospace;
   font-size: 0.86rem;
   font-variant-ligatures: none;
 }
@@ -522,7 +513,7 @@ b {
   padding: 32px 0 44px;
   border-top: 1px solid var(--border-soft);
   color: var(--text-muted);
-  font-family: "JetBrains Mono", monospace;
+  font-family: monospace;
   font-size: 0.68rem;
   letter-spacing: -0.03em;
 }
