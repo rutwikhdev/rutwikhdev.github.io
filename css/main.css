@@ -18,6 +18,8 @@
 
 :root {
   color-scheme: light;
+  --font-sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --font-display: "Space Grotesk", "Inter", sans-serif;
   --paper-bg: #eeeeee;
   --paper-surface: #f7f3df;
   --paper-surface-soft: #eee8d5;
@@ -31,7 +33,6 @@
   --border: #bcbcbc;
   --border-soft: #d0d0d0;
   --code-bg: #e4dfca;
-  --code-border: #d0d0d0;
   --shadow: rgba(68, 68, 68, 0.08);
   --syntax-blue: #005f87;
   --syntax-green: #008700;
@@ -56,7 +57,6 @@
   --border: #585858;
   --border-soft: #444444;
   --code-bg: #242424;
-  --code-border: #444444;
   --shadow: rgba(0, 0, 0, 0.24);
   --syntax-blue: #5fafd7;
   --syntax-green: #5faf5f;
@@ -79,14 +79,9 @@ html {
 
 body {
   min-height: 100vh;
-  background:
-    /* radial-gradient(circle at 20% 0%, rgba(215, 175, 95, 0.13), transparent 32rem), */
-    /* linear-gradient(90deg, rgba(68, 68, 68, 0.025) 1px, transparent 1px), */
-    /* linear-gradient(180deg, rgba(68, 68, 68, 0.02) 1px, transparent 1px), */
-    var(--paper-bg);
-  background-size: auto, 34px 34px, 34px 34px, auto;
+  background: var(--paper-bg);
   color: var(--text);
-  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-family: var(--font-sans);
   line-height: 1.75;
   text-rendering: optimizeLegibility;
   transition: background-color 0.2s ease, color 0.2s ease;
@@ -105,15 +100,9 @@ a:hover {
   text-decoration-color: currentColor;
 }
 
-em,
-i {
-  font-style: italic;
-}
-
 strong,
 b {
   color: var(--text-strong);
-  font-weight: 700;
 }
 
 .container,
@@ -136,11 +125,23 @@ b {
   border-bottom: 1px solid var(--border-soft);
 }
 
-.site-title {
+.site-title,
+.post-link,
+.post-header h1,
+.post-content h1,
+.post-content h2,
+.post-content h3,
+.post-content h4,
+.post-content h5,
+.post-content h6 {
   color: var(--text-strong);
-  font-family: "Space Grotesk", "Inter", sans-serif;
-  font-size: clamp(1.25rem, 3vw, 1.55rem);
+  font-family: var(--font-display);
   font-weight: 700;
+  letter-spacing: -0.04em;
+}
+
+.site-title {
+  font-size: clamp(1.25rem, 3vw, 1.55rem);
   letter-spacing: -0.045em;
   line-height: 1.1;
   text-decoration: none;
@@ -156,7 +157,7 @@ b {
   justify-content: flex-end;
   flex-wrap: wrap;
   gap: 10px 18px;
-  font-family: "Space Grotesk", "Inter", sans-serif;
+  font-family: var(--font-display);
 }
 
 .nav a {
@@ -227,11 +228,7 @@ b {
 }
 
 .post-date {
-  display: block;
   margin-bottom: 5px;
-  color: var(--text-muted);
-  font-family: monospace;
-  font-size: 0.72rem;
   letter-spacing: -0.03em;
 }
 
@@ -249,11 +246,8 @@ b {
 }
 
 .post-link {
-  color: var(--text-strong);
-  font-family: "Space Grotesk", "Inter", sans-serif;
   font-size: clamp(1.25rem, 3vw, 1.55rem);
   font-weight: 600;
-  letter-spacing: -0.04em;
   line-height: 1.22;
   text-decoration: none;
 }
@@ -271,20 +265,21 @@ b {
 
 .post-header h1 {
   max-width: 12ch;
-  color: var(--text-strong);
-  font-family: "Space Grotesk", "Inter", sans-serif;
   font-size: clamp(2rem, 7vw, 4rem);
-  font-weight: 700;
   letter-spacing: -0.065em;
   line-height: 0.98;
 }
 
+.post-date,
 .post-meta {
   display: block;
-  margin-top: 18px;
   color: var(--text-muted);
   font-family: monospace;
   font-size: 0.72rem;
+}
+
+.post-meta {
+  margin-top: 18px;
   letter-spacing: -0.035em;
   line-height: 1.7;
 }
@@ -303,10 +298,6 @@ b {
 .post-content h4,
 .post-content h5,
 .post-content h6 {
-  color: var(--text-strong);
-  font-family: "Space Grotesk", "Inter", sans-serif;
-  font-weight: 700;
-  letter-spacing: -0.04em;
   line-height: 1.16;
 }
 
@@ -427,7 +418,7 @@ b {
 }
 
 .post-content code {
-  border: 1px solid var(--code-border);
+  border: 1px solid var(--border-soft);
   border-radius: 4px;
   background: var(--code-bg);
   color: var(--text-strong);
@@ -438,7 +429,7 @@ b {
   margin: 1.55rem 0;
   padding: 1rem;
   overflow-x: auto;
-  border: 1px solid var(--code-border);
+  border: 1px solid var(--border-soft);
   border-radius: 8px;
   background: var(--code-bg);
   box-shadow: 0 14px 40px var(--shadow);
@@ -532,6 +523,7 @@ b {
 
 .about-photo img {
   width: 100%;
+  max-width: 640px;
   height: auto;
   border: 8px solid var(--border-soft);
   border-radius: 10px;
@@ -547,7 +539,7 @@ b {
   flex-wrap: wrap;
   gap: 14px 22px;
   margin-top: 32px;
-  font-family: "Space Grotesk", "Inter", sans-serif;
+  font-family: var(--font-display);
   font-weight: 600;
 }
 
