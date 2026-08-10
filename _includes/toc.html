@@ -1,0 +1,25 @@
+{% if include.html contains '<h2' %}
+<nav>
+  <ul>
+    {% assign h2s = include.html | split: '<h2' %}
+    {% for h2 in h2s offset:1 %}
+      {% assign h2chunk = h2 | split: '<h3' %}
+      {% assign h2head = h2chunk | first %}
+      {% assign h2id = h2head | split: 'id="' | last | split: '"' | first %}
+      {% assign h2title = h2head | split: '>' | last | split: '<' | first %}
+      <li>
+        <a class="h2" href="#{{ h2id }}">{{ h2title }}</a>
+        {% if h2chunk.size > 1 %}
+        <ul>
+          {% for h3 in h2chunk offset:1 %}
+            {% assign h3id = h3 | split: 'id="' | last | split: '"' | first %}
+            {% assign h3title = h3 | split: '>' | last | split: '<' | first %}
+            <li><a class="h3" href="#{{ h3id }}">{{ h3title }}</a></li>
+          {% endfor %}
+        </ul>
+        {% endif %}
+      </li>
+    {% endfor %}
+  </ul>
+</nav>
+{% endif %}

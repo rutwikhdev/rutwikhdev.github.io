@@ -3,7 +3,7 @@ title: rutwik hiwalkar
 email: "rutwikhdev@gmail.com"
 description: "Outcome of Letting my intrusive thoughts win"
 baseurl: ""
-url: "http://rutwikhdev.github.io"
+url: "https://rutwikhdev.github.io"
 twitter: "https://x.com/rutwiked"
 github: "https://github.com/rutwikhdev"
 
@@ -16,3 +16,35 @@ kramdown:
   input: GFM
   auto_ids: true
   syntax_highlighter: rouge
+
+# Serene-style theme settings
+name: rutwik hiwalkar
+id: rutwikhdev
+bio: "Outcome of letting my intrusive thoughts win..."
+avatar: /assets/me-640.webp
+
+links:
+  - { name: GitHub, icon: github, url: "https://github.com/rutwikhdev" }
+  - { name: X, icon: twitter, url: "https://x.com/rutwiked" }
+  - { name: Email, icon: email, url: "mailto:rutwikhdev@gmail.com" }
+
+sections:
+  - { name: posts, path: /posts, is_external: false }
+  - { name: about, path: /about, is_external: false }
+  - { name: resume, path: /resume.pdf, is_external: true }
+
+blog_title: Posts
+blog_subtitle: "Outcome of letting my intrusive thoughts win..."
+date_format: "%b %-d, %Y"
+recent_max: 5
+recent_more_text: "more »"
+
+back_link_text: Back
+footer_copyright: "© rutwik hiwalkar"
+footer_credits: false
+not_found_error_text: "404 Not Found"
+not_found_recover_text: "« back to home »"
+
+toc: true
+back_to_top: true
+outdate_alert: false

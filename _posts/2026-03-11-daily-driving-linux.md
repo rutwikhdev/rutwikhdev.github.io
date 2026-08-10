@@ -1,6 +1,5 @@
 ---
 layout: post
-comments: true
 title:  "Lessons from Daily Driving Linux for 8 Years"
 date: 2026-03-10 00:00:00
 author: Rutwik Hiwalkar

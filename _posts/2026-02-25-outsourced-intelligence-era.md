@@ -1,6 +1,5 @@
 ---
 layout: post
-comments: true
 title:  "Outsourced Intelligence Era"
 date: 2026-02-25 01:00:00
 author: Rutwik Hiwalkar
