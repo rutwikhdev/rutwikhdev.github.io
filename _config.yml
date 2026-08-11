@@ -1,6 +1,5 @@
 # Site settings
-title: rutwik hiwalkar
-email: "rutwikhdev@gmail.com"
+title: Rutwik Hiwalkar
 description: "Outcome of Letting my intrusive thoughts win"
 baseurl: ""
 url: "https://rutwikhdev.github.io"
@@ -18,7 +17,7 @@ kramdown:
   syntax_highlighter: rouge
 
 # Serene-style theme settings
-name: rutwik hiwalkar
+name: Rutwik Hiwalkar
 id: rutwikhdev
 bio: "Outcome of letting my intrusive thoughts win..."
 avatar: /assets/me-640.webp
@@ -34,7 +33,6 @@ sections:
   - { name: resume, path: /resume.pdf, is_external: true }
 
 blog_title: Posts
-blog_subtitle: "Outcome of letting my intrusive thoughts win..."
 date_format: "%b %-d, %Y"
 recent_max: 5
 recent_more_text: "more »"
@@ -47,4 +45,3 @@ not_found_recover_text: "« back to home »"
 
 toc: true
 back_to_top: true
-outdate_alert: false

@@ -138,21 +138,6 @@ function enableTocTooltip() {
   toggleTooltip();
 }
 
-function addFootnoteBacklink() {
-  const footnotes = document.querySelectorAll('.footnote-definition');
-  footnotes.forEach(footnote => {
-    const backlink = document.createElement('button');
-    backlink.className = 'backlink';
-    backlink.ariaLabel = 'backlink';
-    backlink.innerHTML = '↩︎';
-    backlink.addEventListener('click', () => window.scrollTo({
-      top: document.querySelector(`.footnote-reference a[href="#${footnote.id}"]`).getBoundingClientRect().top + window.scrollY,
-    }));
-    const lastEl = footnote.lastElementChild || footnote;
-    lastEl.appendChild(backlink);
-  });
-}
-
 function enableImgLightense() {
   window.addEventListener("load", () => Lightense(".prose img:not(.no-lightense)", { background: 'rgba(43, 43, 43, 0.19)' }));
 }
@@ -178,6 +163,5 @@ if (document.body.classList.contains('post')) {
 }
 if (document.querySelector('.prose')) {
   addCopyBtns();
-  addFootnoteBacklink();
   enableImgLightense();
 }
