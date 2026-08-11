@@ -13,4 +13,6 @@ There is no longer an uncertainty for using AI at work. An overwhelming amount o
 
 Software Engineer is not the only sector that is on the path of being automated. Most other low effort, high friction professions are also being replaced by agents or agentic workflows. My guess is we will see a vastly different world and job landscape in 5 years time, how far we are from that future only time will tell. This is the new kind of industrial revolution which makes a large portion of mental labour obsolete, whether it is just a layer of abstraction on existing world or not, I leave it for you to decide. As of now human consiousness wins in limited ways, but will AI help us understand it better or surpass it is the big question?
 
-> Software is eating the world but AI is going to eat software - Jensen Huang
+> Software is eating the world but AI is going to eat software
+>
+> — Jensen Huang

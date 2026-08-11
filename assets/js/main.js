@@ -142,6 +142,23 @@ function enableImgLightense() {
   window.addEventListener("load", () => Lightense(".prose img:not(.no-lightense)", { background: 'rgba(43, 43, 43, 0.19)' }));
 }
 
+function addQuoteAuthors() {
+  document.querySelectorAll('.prose blockquote').forEach(quote => {
+    const last = quote.querySelector(':scope > :last-child');
+    let node = last;
+    if (last && (last.matches('ul, ol'))) {
+      const items = last.querySelectorAll('li');
+      if (items.length !== 1) return;
+      node = items[0];
+    }
+    if (!node) return;
+    const match = node.textContent.trim().match(/^[—–-]\s*(.+)$/);
+    if (!match) return;
+    node.classList.add('from');
+    node.textContent = match[1];
+  });
+}
+
 function enableBackLink() {
   const backLink = document.querySelector('#back-link');
   if (!backLink) return;
@@ -163,5 +180,6 @@ if (document.body.classList.contains('post')) {
 }
 if (document.querySelector('.prose')) {
   addCopyBtns();
+  addQuoteAuthors();
   enableImgLightense();
 }
