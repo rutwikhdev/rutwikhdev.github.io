@@ -193,6 +193,7 @@ a:focus-visible {
       color: var(--text-decoration-color);
       font-size: 0.95em;
       list-style: none;
+      font-style: italic;
 
       &::before {
         content: "— ";

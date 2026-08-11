@@ -28,9 +28,9 @@ links:
   - { name: Email, icon: email, url: "mailto:rutwikhdev@gmail.com" }
 
 sections:
-  - { name: posts, path: /posts, is_external: false }
-  - { name: about, path: /about, is_external: false }
-  - { name: resume, path: /resume.pdf, is_external: true }
+  - { name: ~/posts, path: /posts, is_external: false }
+  - { name: ~/about, path: /about, is_external: false }
+  - { name: ~/resume.pdf, path: /resume.pdf, is_external: true }
 
 blog_title: Posts
 date_format: "%b %-d, %Y"
