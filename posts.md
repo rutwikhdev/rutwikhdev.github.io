@@ -1,6 +1,6 @@
 ---
 layout: blog
 title: Posts
-subtitle: "Outcome of letting my intrusive thoughts win..."
+subtitle: "Raw, unedited and unstructured ramblings..."
 permalink: /posts/
 ---
