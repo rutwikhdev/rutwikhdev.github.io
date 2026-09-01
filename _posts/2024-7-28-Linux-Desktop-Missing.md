@@ -1,6 +1,5 @@
 ---
 layout: post
-comments: true
 title:  "What is the Linux Desktop Missing?"
 date: 2024-03-11 22:00:00
 author: Rutwik Hiwalkar

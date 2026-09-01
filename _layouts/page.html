@@ -1,15 +1,25 @@
 ---
 layout: default
 ---
-<div class="post">
+<div id="wrapper">
+  <div id="blank"></div>
 
-  <article class="post-content">
-  {{ content }}
-  </article>
-  
+  <aside>
+    {% if site.back_to_top %}
+    <button id="back-to-top" aria-label="back to top">
+      <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="19" x2="12" y2="5"></line><polyline points="5 12 12 5 19 12"></polyline></svg>
+    </button>
+    {% endif %}
+  </aside>
+
+  <main>
+    {% include back-link.html path="/" text=site.back_link_text %}
+
+    <article class="prose">
+      <h1>{{ page.title }}</h1>
+      {{ content }}
+    </article>
+
+    {% include footer.html %}
+  </main>
 </div>
-
-<!-- mathjax -->
-{% if page.mathjax %}
-<script type="text/javascript" src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-{% endif %}

@@ -1,61 +1,20 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
   {% include head.html %}
 
-    <body>
-
-    {% include header.html %}
-
-    <div class="container">
-      {{ content }}
-    </div>
-
-    <footer class="site-footer">
-      <p>&copy; {{ site.time | date: '%Y' }} {{ site.title }}. All rights reserved.</p>
-    </footer>
-
+  <body class="{% case page.layout %}{% when 'home' %}homepage{% when 'blog' %}blog{% when 'post' %}post{% when 'page' %}post{% when '404' %}not-found{% endcase %}">
     <script>
-      (function() {
-        const toggle = document.getElementById('theme-toggle');
-        const sunIcon = toggle.querySelector('.sun-icon');
-        const moonIcon = toggle.querySelector('.moon-icon');
-        
-        const savedTheme = localStorage.getItem('theme');
-        const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-        
-        const theme = savedTheme || (prefersDark ? 'dark' : 'light');
-        document.documentElement.setAttribute('data-theme', theme);
-        
-        function updateIcons(theme) {
-          if (theme === 'dark') {
-            sunIcon.style.display = 'none';
-            moonIcon.style.display = 'block';
-          } else {
-            sunIcon.style.display = 'block';
-            moonIcon.style.display = 'none';
-          }
-        }
-        
-        updateIcons(theme);
-        
-        toggle.addEventListener('click', function() {
-          const current = document.documentElement.getAttribute('data-theme');
-          const next = current === 'dark' ? 'light' : 'dark';
-          document.documentElement.setAttribute('data-theme', next);
-          localStorage.setItem('theme', next);
-          updateIcons(next);
-        });
-
-        document.querySelectorAll('.post-content a').forEach(function(link) {
-          const href = link.getAttribute('href');
-          if (href && (href.startsWith('http://') || href.startsWith('https://'))) {
-            link.setAttribute('target', '_blank');
-            link.setAttribute('rel', 'noopener noreferrer');
-          }
-        });
-      })();
+      const theme = sessionStorage.getItem('theme');
+      const match = window.matchMedia("(prefers-color-scheme: dark)").matches;
+      if ((theme && theme == 'dark') || (!theme && match)) {
+        document.body.classList.add('dark');
+      }
     </script>
 
-    </body>
+    {{ content }}
+
+    <script src="{{ "/assets/js/main.js" | prepend: site.baseurl }}" defer></script>
+  </body>
+
 </html>

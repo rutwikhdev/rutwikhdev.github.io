@@ -1,6 +1,5 @@
 ---
 layout: post
-comments: true
 title:  "How to use AI for not so Technical Folks"
 date: 2026-03-08 01:00:00
 author: Rutwik Hiwalkar

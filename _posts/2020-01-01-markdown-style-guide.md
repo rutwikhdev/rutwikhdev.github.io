@@ -44,9 +44,11 @@ This is another paragraph with **bold text** and *italic text* and ***bold itali
 
 ## Blockquotes
 
-> This is a blockquote. It can span multiple lines.
+> "This is a blockquote. It can span multiple lines."
 > 
-> And it can have multiple paragraphs.
+> "And it can have multiple paragraphs."
+>
+> -- Author
 
 ## Code
 
