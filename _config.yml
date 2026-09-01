@@ -5,6 +5,7 @@ baseurl: ""
 url: "https://rutwikhdev.github.io"
 twitter: "https://x.com/rutwiked"
 github: "https://github.com/rutwikhdev"
+linkedin: "https://www.linkedin.com/in/rutwikhdev/"
 
 # Build settings
 markdown: kramdown
@@ -25,6 +26,7 @@ avatar: /assets/me-640.webp
 links:
   - { name: GitHub, icon: github, url: "https://github.com/rutwikhdev" }
   - { name: X, icon: twitter, url: "https://x.com/rutwiked" }
+  - { name: Linkedin, icon: linkedin, url: "https://www.linkedin.com/in/rutwikhdev/" }
   - { name: Email, icon: email, url: "mailto:rutwikhdev@gmail.com" }
 
 sections:

@@ -23,5 +23,7 @@ I've spent roughly 3.5 years working professionally as a software engineer for a
   ·
   <a target="_blank" rel="noopener noreferrer" href="{{ site.twitter }}">X</a>
   ·
+  <a target="_blank" rel="noopener noreferrer" href="{{ site.linkedin }}">Linkedin</a>
+  ·
   <a href="{{ "/feed.xml" | prepend: site.baseurl }}">Feed</a>
 </p>
