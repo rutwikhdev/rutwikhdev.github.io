@@ -1,9 +1,9 @@
----
-layout: post
-title:  "How to use AI for not so Technical Folks"
-date: 2026-03-08 01:00:00
-author: Rutwik Hiwalkar
----
++++
+title = "How to use AI for not so Technical Folks"
+date = 2026-03-08T01:00:00
+authors = ["Rutwik Hiwalkar"]
+path = "/how-to-use-ai-nontechs/"
++++
 
 GPTs are not humans! Stop using them like one. I've seen most of my non tech friends use ChatGPT like a therapists. They are already convinced this is the next forthcoming of God himself. 90% of the work is offloaded to AI and 10% of the effort is put into thinking about what to prompt and re-prompt because the previous prompt did not work. The amount of stupidity and timeloss I've people get into using this application it genuinely feels like looking at a monkey trying to do carpentry.
 

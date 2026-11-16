@@ -1,5 +1,3 @@
----
----
 /* serene (v5.7.0) port — https://github.com/isunjn/serene */
 
 /* base
@@ -1082,3 +1080,27 @@ template {
 [hidden] {
   display: none;
 }
+
+/* Zola highlighting compatibility: retain the existing light/dark palette. */
+.prose pre.giallo {
+  color-scheme: light;
+  color: var(--text-color) !important;
+  background-color: transparent !important;
+}
+body.dark .prose pre.giallo { color-scheme: dark; }
+
+.prose .giallo span[style*="#D73A49"] { color: var(--syntax-keyword) !important; }
+
+.prose .giallo span[style*="#6F42C1"] { color: var(--syntax-function) !important; }
+
+.prose .giallo span[style*="#032F62"] { color: var(--syntax-string) !important; }
+
+.prose .giallo span[style*="#005CC5"] { color: var(--syntax-number) !important; }
+
+.prose .giallo span[style*="#E36209"] { color: var(--syntax-important) !important; }
+
+.prose .giallo span[style*="#6A737D"] { color: var(--syntax-comment) !important; font-style: italic; }
+
+.prose .giallo span[style*="#22863A"] { color: var(--syntax-name) !important; }
+
+.prose .giallo span[style*="#B31D28"] { color: var(--syntax-error) !important; }

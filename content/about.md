@@ -1,7 +1,7 @@
----
-layout: page
-title: About
----
++++
+title = "About"
+template = "page.html"
++++
 
 <figure>
   <picture>
@@ -19,11 +19,11 @@ I've spent roughly 3.5 years working professionally as a software engineer for a
 <p>When I'm not coding, you can find me listening to music, playing video games, watching sports or just day dreaming. I also enjoy watching scifi movies and shows, particularly dystopian.</p>
 
 <p>
-  <a target="_blank" rel="noopener noreferrer" href="{{ site.github }}">Github</a>
+  <a target="_blank" rel="noopener noreferrer" href="https://github.com/rutwikhdev">Github</a>
   ·
-  <a target="_blank" rel="noopener noreferrer" href="{{ site.twitter }}">X</a>
+  <a target="_blank" rel="noopener noreferrer" href="https://x.com/rutwiked">X</a>
   ·
-  <a target="_blank" rel="noopener noreferrer" href="{{ site.linkedin }}">Linkedin</a>
+  <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/rutwikhdev/">Linkedin</a>
   ·
-  <a href="{{ "/feed.xml" | prepend: site.baseurl }}">Feed</a>
+  <a href="/feed.xml">Feed</a>
 </p>

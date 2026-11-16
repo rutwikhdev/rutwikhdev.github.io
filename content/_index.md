@@ -1,5 +1,5 @@
----
-layout: home
----
++++
+title = "Rutwik Hiwalkar"
++++
 
 Hi, I'm a Software Engineer who loves building things and solving problems. This blog is where I document my journey, share my learnings or just rant about things most of the time. Currently I'm learning about distributed systems and AI

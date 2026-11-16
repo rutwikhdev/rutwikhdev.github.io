@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+{% block body_class %}not-found{% endblock body_class %}
+{% block content %}
+<div class="wrapper">
+  <p class="error">{{ config.extra.not_found_error_text }}</p>
+  <a class="instant" href="/">{{ config.extra.not_found_recover_text }}</a>
+</div>
+
+{% endblock content %}

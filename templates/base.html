@@ -1,0 +1,31 @@
+{% set title = config.title %}
+{% set canonical = get_url(path="404.html") %}
+{% set is_post = false %}
+{% if page is defined %}
+  {% set title = page.title %}
+  {% set canonical = page.permalink %}
+  {% set is_post = page.date is defined %}
+{% elif section is defined %}
+  {% set title = section.title | default(value=config.title) %}
+  {% set canonical = section.permalink %}
+{% endif %}
+<!DOCTYPE html>
+<html lang="en">
+
+  {% include "partials/head.html" %}
+
+  <body class="{% block body_class %}{% endblock body_class %}">
+    <script>
+      const theme = sessionStorage.getItem('theme');
+      const match = window.matchMedia("(prefers-color-scheme: dark)").matches;
+      if ((theme && theme == 'dark') || (!theme && match)) {
+        document.body.classList.add('dark');
+      }
+    </script>
+
+    {% block content %}{% endblock content %}
+
+    <script src="/assets/js/main.js" defer></script>
+  </body>
+
+</html>

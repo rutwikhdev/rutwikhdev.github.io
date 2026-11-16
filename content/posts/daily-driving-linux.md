@@ -1,9 +1,9 @@
----
-layout: post
-title:  "Lessons from Daily Driving Linux for 8 Years"
-date: 2026-03-10 00:00:00
-author: Rutwik Hiwalkar
----
++++
+title = "Lessons from Daily Driving Linux for 8 Years"
+date = 2026-03-10T00:00:00
+authors = ["Rutwik Hiwalkar"]
+path = "/daily-driving-linux/"
++++
 
 As the realiazation hit, it was too hard to believe and too much to digest. Yes, I've been daily driving linux for the last 8 years now. The journey started with my annoyance with how sluggish and buggy windows was in my college days. Having developed a never-ending passionate hate for windows I installed linux by wiping my entire drive. Not dual booting, not trying it out in a VM, just simply nuking entire system and data and starting over. It was refreshing to use an operation system that respected my choices and did not think I'm stupid.
 

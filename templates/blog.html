@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+{% block body_class %}blog{% endblock body_class %}
+{% block content %}
+<div id="wrapper">
+  {% set back_path = "/" %}{% include "partials/back-link.html" %}
+
+  <div class="section-title">
+    <h1>{{ section.title }}</h1>
+    {% if section.extra.subtitle %}
+    <p>{{ section.extra.subtitle }}</p>
+    {% endif %}
+  </div>
+
+  <main class="layout-list">
+    <div class="post-list">
+      {% for post in section.pages %}
+      <a class="post instant" href="{{ post.permalink }}">
+        <span>{{ post.title }}</span>
+        <span class="date">{{ post.date | date(format=config.extra.date_format) }}</span>
+      </a>
+      {% endfor %}
+    </div>
+  </main>
+
+  {% include "partials/footer.html" %}
+</div>
+
+{% endblock content %}

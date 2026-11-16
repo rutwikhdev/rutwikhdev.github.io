@@ -1,9 +1,9 @@
----
-layout: post
-title:  "Collection of Quotes that Move Me"
-date: 2025-10-11 22:00:00
-author: Rutwik Hiwalkar
----
++++
+title = "Collection of Quotes that Move Me"
+date = 2025-10-11T22:00:00
+authors = ["Rutwik Hiwalkar"]
+path = "/favourite-quotes/"
++++
 
 > "Imagination is everything, it is a preview of your life's upcoming attaractions"
 >

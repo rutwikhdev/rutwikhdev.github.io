@@ -1,8 +1,8 @@
----
-layout: post
-title: Markdown Style Guide
-date: 2020-01-01
----
++++
+title = "Markdown Style Guide"
+date = 2020-01-01
+path = "/markdown-style-guide/"
++++
 
 This is a demonstration of all the markdown styling features available on this blog.
 

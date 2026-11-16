@@ -1,11 +1,11 @@
----
-layout: post
-title:  "What is the Linux Desktop Missing?"
-date: 2024-03-11 22:00:00
-author: Rutwik Hiwalkar
----
++++
+title = "What is the Linux Desktop Missing?"
+date = 2024-03-11T22:00:00
+authors = ["Rutwik Hiwalkar"]
+path = "/linux-desktop-missing/"
++++
 
-September 1991 was the first stable release of Linux. Since then Linux has absolutely dominated the server space and mobile market as android is based on it. Linux has been around for sometime yet the overall market share for desktop is only 4.04% and OS share is sitting at just 1%. What is the reason linux desktops haven't catch up? This is battle tested technology written over the last 33 years and designed to run on everything from a small vacuum cleaner to a giant distributed network of computers spread across the world, heck even the NASA uses linux internally for their systems and it has even [reached Mars](https://www.theverge.com/2021/2/19/22291324/linux-perseverance-mars-curiosity-ingenuity){:target="_blank"} ! It’s almost hysterical to think that such a versatile, powerful, and completely free operating system is falling behind.
+September 1991 was the first stable release of Linux. Since then Linux has absolutely dominated the server space and mobile market as android is based on it. Linux has been around for sometime yet the overall market share for desktop is only 4.04% and OS share is sitting at just 1%. What is the reason linux desktops haven't catch up? This is battle tested technology written over the last 33 years and designed to run on everything from a small vacuum cleaner to a giant distributed network of computers spread across the world, heck even the NASA uses linux internally for their systems and it has even <a href="https://www.theverge.com/2021/2/19/22291324/linux-perseverance-mars-curiosity-ingenuity" target="_blank">reached Mars</a> ! It’s almost hysterical to think that such a versatile, powerful, and completely free operating system is falling behind.
 
 I've been using linux as my primary desktop environment for a little more than 6 years and here are the reasons that make it less popular choice for a desktop environment for a casual everyday joe.
 
@@ -22,7 +22,7 @@ Linux is written with an intention to run anywhere. It is difficult to cover all
 The reasons above contribute to a broader reluctance among enterprises to adopt Linux desktops. While Linux dominates the server space due to its stability and performance, many companies prefer Windows or macOS for their desktop environments. This preference often stems from established workflows, software availability, and the familiarity of their teams with these operating systems.
 
 ### Desktop Environment philosophies
-The Linux Desktop Environment has been very stagnant with Gnome and KDE being the only major competitors. There are many other contenders but they are just a refactored version of the former two. [Gnome](https://www.gnome.org/){:target="_blank"} is too minimal and basic but the developers don't care about user feedback and requests [KDE](https://kde.org/){:target="_blank"} on the other hand has thousands of knobs and switches which has made it little complicated for the new users. Either way you are going to spend a lot of time configuring any linux DE because you are not going to get what you like out of the box. This is true for any other OS but more so for linux.
+The Linux Desktop Environment has been very stagnant with Gnome and KDE being the only major competitors. There are many other contenders but they are just a refactored version of the former two. <a href="https://www.gnome.org/" target="_blank">Gnome</a> is too minimal and basic but the developers don't care about user feedback and requests <a href="https://kde.org/" target="_blank">KDE</a> on the other hand has thousands of knobs and switches which has made it little complicated for the new users. Either way you are going to spend a lot of time configuring any linux DE because you are not going to get what you like out of the box. This is true for any other OS but more so for linux.
 
 ### Software Support
 While Linux offers robust tools for developers, many popular consumer applications, such as the Adobe Creative Suite and Microsoft Office, are not natively available. Although alternatives exist, they may not meet the needs of all users. This lack of mainstream software can deter casual users who rely on specific applications for their daily tasks.

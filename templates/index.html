@@ -1,0 +1,65 @@
+{% extends "base.html" %}
+{% block body_class %}homepage{% endblock body_class %}
+{% block content %}
+<div id="wrapper">
+  <main>
+    <section id="info">
+      {% if config.extra.avatar %}
+      <img src="{{ config.extra.avatar }}" alt="avatar">
+      {% endif %}
+      <div id="text">
+        <div>
+          <span id="name">{{ config.extra.name }}</span>
+          {% if config.extra.id %}
+          <span id="id">@{{ config.extra.id }}</span>
+          {% endif %}
+        </div>
+        {% if config.extra.bio %}
+        <div id="bio">{{ config.extra.bio }}</div>
+        {% endif %}
+      </div>
+    </section>
+
+    <section id="links">
+      <div id="left">
+        {% for section in config.extra.sections %}
+        <a {% if section.is_external %}href="{{ section.path }}" target="_blank" rel="noopener noreferrer"{% else %}href="{{ section.path }}" class="instant"{% endif %}>{{ section.name }}</a>
+        {% endfor %}
+      </div>
+      <div id="right">
+        {% for link in config.extra.links %}
+        <a href="{{ link.url }}" aria-label="{{ link.name }}" target="_blank" rel="noopener noreferrer">
+          {% include "partials/icon.html" %}
+        </a>
+        {% endfor %}
+        {% include "partials/theme-toggle.html" %}
+      </div>
+    </section>
+
+    <section id="brief" class="prose">
+      {{ section.content | striptags | safe }}
+    </section>
+
+    {% set posts = get_section(path="posts/_index.md") %}{% if posts.pages | length > 0 %}
+    <section class="layout-list">
+      <div class="post-list">
+        
+        {% for post in posts.pages %}
+        {% if loop.index <= config.extra.recent_max %}
+        <a class="post instant" href="{{ post.permalink }}">
+          <span>{{ post.title }}</span>
+          <span class="date">{{ post.date | date(format=config.extra.date_format) }}</span>
+        </a>
+        {% endif %}{% endfor %}
+      </div>
+      {% if posts.pages | length > config.extra.recent_max %}
+      <div class="read-more">
+        <a class="instant" href="/posts">{{ config.extra.recent_more_text }}</a>
+      </div>
+      {% endif %}
+    </section>
+    {% endif %}
+  </main>
+</div>
+
+{% endblock content %}
