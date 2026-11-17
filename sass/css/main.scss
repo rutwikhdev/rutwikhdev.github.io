@@ -116,7 +116,7 @@ a:focus-visible {
   h1 {
     font-size: 1.75em;
     font-weight: bolder;
-    margin: 1.5em 0 0.75em;
+    margin: 1.5em 0 0;
   }
 
   h2 {
@@ -219,7 +219,6 @@ a:focus-visible {
     background-color: var(--text-decoration-color);
     opacity: 0.25;
     height: 2px;
-    margin: 3em 0;
   }
 
   table {
@@ -744,7 +743,6 @@ body.post {
 
     #date {
       color: var(--text-pale-color);
-      margin-bottom: 1em;
 
       #publish {
         margin-right: 1em;
